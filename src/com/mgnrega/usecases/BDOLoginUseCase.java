@@ -10,26 +10,24 @@ import com.mgnrega.exception.BDOException;
 public class BDOLoginUseCase {
 
 	public static void main(String[] args) {
-		
-    	Scanner sc= new Scanner(System.in);
 
+		Scanner sc = new Scanner(System.in);
 
-    	System.out.println("Enter email:");
-    	String uname = sc.next();
-    	
-    	System.out.println("Enter Password:");
-    	String pass = sc.next();
-    	
-    	BdoDao dao = new BdoDaoImple();
-    	
-    	try {
-    		Bdo bd= dao.loginBdo(uname, pass);
-    	
-     		System.out.println("Welcome to MGNREGA");
-     	
-     	
-    	}catch (BDOException e) {
-    		System.out.println(e.getMessage());
-    	}
-	}	
+		System.out.println("Enter email:");
+		String uname = sc.next();
+
+		System.out.println("Enter Password:");
+		String pass = sc.next();
+
+		BdoDao dao = new BdoDaoImple();
+
+		try {
+			Bdo bd = dao.loginBdo(uname, pass);
+
+			System.out.println("Welcome to MGNREGA");
+
+		} catch (BDOException e) {
+			System.out.println(e.getMessage());
+		}
+	}
 }

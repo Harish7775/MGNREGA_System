@@ -1,23 +1,23 @@
 package com.mgnrega.bean;
 
 public class Gpm {
-	
+
 	private int gid;
-	
+
 	private String gname;
-	
+
 	private String gemail;
-	
+
 	private String gpassword;
-	
+
 	private String gmobile;
-	
+
 	private String gaddress;
-	
+
 	private int bdoid;
 
 	public Gpm() {
-		//super();
+		// super();
 		// TODO Auto-generated constructor stub
 	}
 
@@ -93,7 +93,5 @@ public class Gpm {
 		return "Gpm [gid=" + gid + ", gname=" + gname + ", gemail=" + gemail + ", gpassword=" + gpassword + ", gmobile="
 				+ gmobile + ", gaddress=" + gaddress + ", bdoid=" + bdoid + "]";
 	}
-	
-	
-	
+
 }

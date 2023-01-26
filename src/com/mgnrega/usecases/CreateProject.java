@@ -8,39 +8,33 @@ import com.mgnrega.dao.BdoDaoImple;
 
 public class CreateProject {
 
-	 public static void CProject() {
-			
-			Scanner sc= new Scanner(System.in);
-			
-			System.out.println("Enter Project name:");
-			String pname= sc.next();
-				
-				System.out.println("Enter Project id:");
-				int pid= sc.nextInt();
-				
-			
-				
-				System.out.println("Enter Project cost:");
-				String cost= sc.next();
-				
-				System.out.println("Enter Project issuedate:");
-				String issuedate= sc.next();
-				
-				
-				BdoDao dao=new BdoDaoImple();
-				
-				
-				
-				Project project= new Project();
-				
-				project.setPid(pid);
-				project.setPname(pname);
-				project.setPcost(cost);
-				project.setPissuedate(issuedate);
-			
+	public static void CProject() {
 
-				String result= dao.createProject(pid, pname, cost, issuedate);
-				
-				System.out.println(result);
-			}
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter Project name:");
+		String pname = sc.next();
+
+		System.out.println("Enter Project id:");
+		int pid = sc.nextInt();
+
+		System.out.println("Enter Project cost:");
+		String cost = sc.next();
+
+		System.out.println("Enter Project issuedate:");
+		String issuedate = sc.next();
+
+		BdoDao dao = new BdoDaoImple();
+
+		Project project = new Project();
+
+		project.setPid(pid);
+		project.setPname(pname);
+		project.setPcost(cost);
+		project.setPissuedate(issuedate);
+
+		String result = dao.createProject(pid, pname, cost, issuedate);
+
+		System.out.println(result);
+	}
 }

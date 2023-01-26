@@ -1,7 +1,7 @@
 package com.mgnrega.bean;
 
 public class Project {
-	
+
 	private int pid;
 	private String pname;
 	private String pcost;
@@ -9,7 +9,7 @@ public class Project {
 	private int gpmid;
 
 	public Project() {
-		
+
 	}
 
 	public Project(int pid, String pname, String pcost, String pissuedate, int gpmid) {
@@ -66,8 +66,5 @@ public class Project {
 		return "Project [pid=" + pid + ", pname=" + pname + ", pcost=" + pcost + ", pissuedate=" + pissuedate
 				+ ", gpmid=" + gpmid + "]";
 	}
-	
-	
-	
-	
+
 }

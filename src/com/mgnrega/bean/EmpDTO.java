@@ -1,21 +1,21 @@
 package com.mgnrega.bean;
 
 public class EmpDTO {
-	
+
 	private String ename;
-	
+
 	private String emobile;
-	
+
 	private String eaddress;
-	
+
 	private int etotaldaywork;
-	
+
 	private int ewages;
-	
+
 	private String pname;
 
 	public EmpDTO() {
-		
+
 		// TODO Auto-generated constructor stub
 	}
 
@@ -82,8 +82,5 @@ public class EmpDTO {
 		return "EmpDto [ename=" + ename + ", emobile=" + emobile + ", eaddress=" + eaddress + ", etotaldaywork="
 				+ etotaldaywork + ", ewages=" + ewages + ", pname=" + pname + "]";
 	}
-	
-	
-	
 
 }

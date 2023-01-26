@@ -1,0 +1,100 @@
+Project MGNREGA queries :
+
+create Table bdo{
+  id int
+  user_name varchar(15)
+  password varchar(15)
+}
+
+create Table empdto{
+  ename varchar(20)
+  emobile varchar(10)
+  eaddress varchar(20)
+  etotaldaywork int
+  ewages int
+  pname varchar(20)
+}
+
+create Table employee {
+  eid int
+  ename varchar(20)
+  emobile varchar(10)
+  eaddress varchar(30)
+  etotaldaywork int
+  ewages varchar(20)
+}
+
+create Table gpm{
+  gid int
+  gname varchar(20)
+  gemail varchar(20)
+  gpassword varchar(20)
+  gmobile varchar(10)
+  gaddress varchar(20)
+  bdoid int
+}
+
+create Table project{
+  pid int
+  pname varchar(20)
+  pcost varchar(10)
+  pissuedate varchar(20)
+  gmpid int
+}
+
+desc bdo;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| id       | int         | NO   | PRI | NULL    |       |
+| username | varchar(20) | YES  |     | NULL    |       |
+| password | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+desc empdto;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| ename         | varchar(20) | YES  |     | NULL    |       |
+| emobile       | varchar(10) | YES  |     | NULL    |       |
+| eaddress      | varchar(20) | YES  |     | NULL    |       |
+| etotaldaywork | int         | NO   | PRI | NULL    |       |
+| ewages        | int         | YES  |     | NULL    |       |
+| pname         | varchar(20) | YES  | MUL | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+
+ desc employee;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| eid           | int         | NO   | PRI | NULL    |       |
+| ename         | varchar(20) | YES  |     | NULL    |       |
+| emobile       | varchar(10) | YES  |     | NULL    |       |
+| eaddress      | varchar(30) | YES  |     | NULL    |       |
+| etotaldaywork | int         | YES  | MUL | NULL    |       |
+| ewages        | varchar(20) | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+
+desc gpm;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| gid       | int         | NO   | PRI | NULL    |       |
+| gname     | varchar(20) | YES  |     | NULL    |       |
+| gemail    | varchar(20) | YES  |     | NULL    |       |
+| gpassword | varchar(20) | YES  |     | NULL    |       |
+| gmobile   | varchar(10) | YES  |     | NULL    |       |
+| gaddress  | varchar(20) | YES  |     | NULL    |       |
+| bdoid     | int         | YES  | MUL | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+
+ desc project;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| pid        | int         | YES  |     | NULL    |       |
+| pname      | varchar(20) | NO   | PRI | NULL    |       |
+| pcost      | varchar(10) | YES  |     | NULL    |       |
+| pissuedate | varchar(20) | YES  |     | NULL    |       |
+| gmpid      | int         | YES  | MUL | NULL    |       |
++------------+-------------+------+-----+---------+-------+

@@ -1,21 +1,21 @@
 package com.mgnrega.bean;
 
 public class Employee {
-	
+
 	private int eid;
-	
+
 	private String ename;
-	
+
 	private String emobile;
-	
+
 	private String eaddress;
-	
+
 	private int etotaldaywork;
-	
+
 	private String ewages;
 
 	public Employee() {
-		//super();
+		// super();
 		// TODO Auto-generated constructor stub
 	}
 
@@ -83,8 +83,4 @@ public class Employee {
 				+ ", etotaldaywork=" + etotaldaywork + ", ewages=" + ewages + "]";
 	}
 
-	
-	
-	
-	
 }

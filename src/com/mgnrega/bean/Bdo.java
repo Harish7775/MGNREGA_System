@@ -1,11 +1,11 @@
 package com.mgnrega.bean;
 
 public class Bdo {
-	 private int id;
-	 private String username;
-	 private String password;
-	 
-	 public Bdo() {
+	private int id;
+	private String username;
+	private String password;
+
+	public Bdo() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -15,8 +15,6 @@ public class Bdo {
 		this.username = e;
 		this.password = p;
 	}
-
-	
 
 	public int getId() {
 		return id;
@@ -46,7 +44,5 @@ public class Bdo {
 	public String toString() {
 		return "Bdo [id=" + id + ", username=" + username + ", password=" + password + "]";
 	}
-	 
-	 
 
 }
