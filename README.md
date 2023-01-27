@@ -4,7 +4,11 @@
 ------------------------------------
         MGNREGA System              
 ------------------------------------
+# ER Diagram
+<img  src="https://github.com/Harish7775/MGNREGA_System/blob/main/MGNREGA_ER_diagram.png" alt="logo" align="center" >
 
+# Flow chart
+<img  src="https://github.com/Harish7775/MGNREGA_System/blob/main/MGNREGA_ER_diagram.png" alt="logo" align="center" >
 
 <h1>1. BDO Login</h1>
 <h1>2. GPM Login</h1>
